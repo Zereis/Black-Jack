@@ -1,0 +1,11 @@
+C:\Users\David\source\repos\Assignment 5\GameCardLib\bin\Debug\GameCardLib.dll
+C:\Users\David\source\repos\Assignment 5\GameCardLib\bin\Debug\GameCardLib.pdb
+C:\Users\David\source\repos\Assignment 5\GameCardLib\bin\Debug\BlackJackDAL.dll
+C:\Users\David\source\repos\Assignment 5\GameCardLib\bin\Debug\BlackJackDAL.pdb
+C:\Users\David\source\repos\Assignment 5\GameCardLib\obj\Debug\GameCardLib.csproj.AssemblyReference.cache
+C:\Users\David\source\repos\Assignment 5\GameCardLib\obj\Debug\GameCardLib.csproj.CoreCompileInputs.cache
+C:\Users\David\source\repos\Assignment 5\GameCardLib\obj\Debug\GameCardLib.csproj.CopyComplete
+C:\Users\David\source\repos\Assignment 5\GameCardLib\obj\Debug\GameCardLib.dll
+C:\Users\David\source\repos\Assignment 5\GameCardLib\obj\Debug\GameCardLib.pdb
+C:\Users\David\source\repos\Assignment 5\GameCardLib\bin\Debug\GameCardLib.dll.config
+C:\Users\David\source\repos\Assignment 5\GameCardLib\bin\Debug\BlackJackDAL.dll.config
