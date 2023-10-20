@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="master" Class="playerInfoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="BlackJackDAL.Properties.Settings" SettingsPropertyName="masterConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.player" Member="Players">
+    <Type Name="Player">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="player_playerAddress" Member="playerAddresses" ThisKey="id" OtherKey="id" Type="playerAddress" />
+      <Association Name="player_playerScore" Member="playerScores" ThisKey="id" OtherKey="id" Type="playerScore" />
+    </Type>
+  </Table>
+  <Table Name="dbo.playerAddress" Member="playerAddresses">
+    <Type Name="playerAddress">
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="addres" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="phoneNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="player_playerAddress" Member="Player" Storage="_player" ThisKey="id" OtherKey="id" Type="Player" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.playerScore" Member="playerScores">
+    <Type Name="playerScore">
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="wins" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lose" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="player_playerScore" Member="Player" Storage="_player" ThisKey="id" OtherKey="id" Type="Player" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

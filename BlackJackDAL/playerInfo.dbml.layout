@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="playerInfo">
+  <DataContextMoniker Name="/playerInfoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="25cb321f-3b81-4d6a-bc74-2e27deba499f" absoluteBounds="4.375, 2.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/playerInfoDataContext/Player" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40d1fd6a-2ba4-491c-b17c-1c1c8e5352bd" absoluteBounds="4.39, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="03af672b-1bfa-44f2-a3dd-4986985ccdd0" absoluteBounds="3.5, 4.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/playerInfoDataContext/playerAddress" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7798cea8-07d0-4835-bac3-d874671e1fba" absoluteBounds="3.515, 4.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.9375 : 4.06899251302083); (4.9375 : 4.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/playerInfoDataContext/Player/player_playerAddress" />
+      <nodes>
+        <classShapeMoniker Id="25cb321f-3b81-4d6a-bc74-2e27deba499f" />
+        <classShapeMoniker Id="03af672b-1bfa-44f2-a3dd-4986985ccdd0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d7d59af9-fc0a-4a44-9bc6-d059308c023c" absoluteBounds="7.5, 4.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/playerInfoDataContext/playerScore" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2f01aa7-79f5-4b08-a064-88fce1927d27" absoluteBounds="7.515, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 3.47199625651042); (8.5 : 3.47199625651042); (8.5 : 4.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/playerInfoDataContext/Player/player_playerScore" />
+      <nodes>
+        <classShapeMoniker Id="25cb321f-3b81-4d6a-bc74-2e27deba499f" />
+        <classShapeMoniker Id="d7d59af9-fc0a-4a44-9bc6-d059308c023c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
